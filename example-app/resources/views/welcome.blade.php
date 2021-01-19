@@ -31,9 +31,9 @@
             <p>{{ $nome }}</p>
 
             @if($nome == "Flavio")
-                <p>o nome e {{$nome}}</p>
+                <p>o nome e {{ $nome }}</p>
             @else
-                <p>O nome nao e {{$nome}}</p>
+                <p>O nome nao e {{ $nome }}</p>
             @endif;
     </body>
 </html>
