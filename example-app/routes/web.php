@@ -21,3 +21,7 @@ Route::get('/contact', function () {
     return view('contact');
 });
 
+Route::get('/product', function () {
+    return view('product');
+});
+
