@@ -22,8 +22,18 @@
     </head>
     <body>
             <h1>Alguma coisa</h1>
-            @if(10 > 5)
+            @if(10 < 5)
                 <p>A condição e verdadeira</p>
+            @else
+                <p>a condição nao e verdadeira</p>
             @endif
+
+            <p>{{ $nome }}</p>
+
+            @if($nome == "Flavio")
+                <p>o nome e {{$nome}}</p>
+            @else
+                <p>O nome nao e {{$nome}}</p>
+            @endif;
     </body>
 </html>
