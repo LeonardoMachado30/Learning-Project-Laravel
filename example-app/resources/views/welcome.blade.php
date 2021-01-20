@@ -2,6 +2,8 @@
 
 @section('title', 'HDC Events')
 
+@section('content')
+
     <h1>Alguma coisa</h1>
     @if(10 < 5)
         <p>A condição e verdadeira</p>
@@ -34,6 +36,5 @@
     @endforeach
 
     {{-- Comentario pelo Blande --}}
-@section('content')
 
 @endsection
