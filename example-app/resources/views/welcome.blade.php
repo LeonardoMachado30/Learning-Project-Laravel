@@ -32,7 +32,6 @@
             @endphp
 
             @foreach($nomes as $nome)
-                <p> {{ $loop->index }} </p>
                 <p> {{ $nome }} </p>
             @endforeach
 
