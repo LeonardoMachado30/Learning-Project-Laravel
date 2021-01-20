@@ -7,16 +7,16 @@ Aprendendo e aprimorando as habilidades com o framework Laravel, construindo o p
 
 <h2>Aprendizado</h2>
 
-<h4><p>1.Baixando arquivos e configurando ambiente de trabalho, usando <b>VSCode</b> como editor, <b>Composer</b>, <b>XAMP</b>, <b>Laravel Fremework</b> e <b>MySQL</b>.</p></h4>
+1. Baixando arquivos e configurando ambiente de trabalho, usando V**SCode** como editor, **Composer**, **XAMP**, **Laravel Fremework** e **MySQL**.
 
-<h5><p>1.1 Para ver o conteudo e necessario: Laravel Framework, Composer, XAMP (ou equivalente), VSCode (ou equivalente).</p></h5>
+    1. 1 Para ver o conteudo e necessario: Laravel Framework, Composer, XAMP (ou equivalente), VSCode (ou equivalente).
 
-<h4><p>2. Criando Hello World e conhecendo os componentes do Laravel.</p></h4>
+2. Criando Hello World e conhecendo os componentes do Laravel.
 
-<h4><p>3. Aprendendo Routes e passando variaveis.</p></h4>
+3. Aprendendo Routes e passando variaveis.
 
-<h4><p>4. Criando if, else, for, foreach usando a estrutura blade, incluindo comentarios fora do html.</p>
+4. Criando if, else, for, foreach usando a estrutura blade, incluindo comentarios fora do html.</p>
 
-<h4><p>5. Criando Layouts para evitar repeticão de codigo, usando o comando @section e @export para definir o caminho do layout.</p></h4>
+5. Criando Layouts para evitar repeticão de codigo, usando o comando @section e @export para definir o caminho do layout.
 
-<h4><p>6. Parametros nas rotas de forma obrigatoria e opcional.</p></h4>
+6. Parametros nas rotas de forma obrigatoria e opcional.
