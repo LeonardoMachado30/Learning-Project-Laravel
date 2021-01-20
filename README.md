@@ -15,8 +15,10 @@ Aprendendo e aprimorando as habilidades com o framework Laravel, construindo o p
 
 3. Aprendendo Routes e passando variaveis.
 
-4. Criando if, else, for, foreach usando a estrutura blade, incluindo comentarios fora do html.</p>
+4. Criando if, else, for, foreach usando a estrutura blade, incluindo comentarios fora do html.
 
 5. Criando Layouts para evitar repeticão de codigo, usando o comando @section e @export para definir o caminho do layout.
 
 6. Parametros nas rotas de forma obrigatoria e opcional.
+
+7. Controllers
