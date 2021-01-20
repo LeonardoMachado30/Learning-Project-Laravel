@@ -3,7 +3,7 @@
 
  <h2>Introdução</h2>
 
-    Aprendendo e aprimorando as habilidades com o framework Laravel, construindo o primeiro WebSite em Laravel, entendo o Fomato MVC, conhecendo a estrutura e praticando a sintaxe, metodos, rotas, entre outros.
+Aprendendo e aprimorando as habilidades com o framework Laravel, construindo o primeiro WebSite em Laravel, entendo o Fomato MVC, conhecendo a estrutura e praticando a sintaxe, metodos, rotas, entre outros.
 
 <h2>Aprendizado</h2>
 
