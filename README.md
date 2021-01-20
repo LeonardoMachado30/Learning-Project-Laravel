@@ -17,8 +17,10 @@ Aprendendo e aprimorando as habilidades com o framework Laravel, construindo o p
 
 4. Criando if, else, for, foreach usando a estrutura blade, incluindo comentarios fora do html.
 
-5. Criando Layouts para evitar repeticão de codigo, usando o comando @section e @export para definir o caminho do layout.
+5. Criando Layouts para evitar repeticão de codigo, usando o comando **@section** e **@export** para definir o caminho do layout.
 
 6. Parametros nas rotas de forma obrigatoria e opcional.
 
-7. Controllers
+7. **Controllers**, usando padrão Laravel para manipular as rotas pelo Controllers de forma que o arquio **'Route'** fique limpo.
+
+8. Conexão com banco de dados, usando **ORM** chamada **Eloquent** e criação de tabelas as **migrations**.

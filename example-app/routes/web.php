@@ -13,20 +13,11 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
+use App\http\Controllers\EventController;
 
-    $nome = "Flavio";
 
-    $arr = [10,20,4555,2,5];
-
-    $nomes = ["flavio", "Lais", "Rodrigo", "Joao"];
-
-    return view('welcome', [
-        'nome' => $nome,
-        'arr' => $arr,
-        'nomes' => $nomes
-        ]);
-});
+Route::get('/', [EventController::class, 'index']); 
+Route::get('/events/create', [EventController::class, 'create']); 
 
 Route::get('/contact', function () {
     return view('contact');
