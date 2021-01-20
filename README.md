@@ -1,7 +1,11 @@
 # ProjetoLaravel
  Aprendendo Laravel framework
 
- <h1>Introdução</h1>
+ <h2>Introdução</h2>
+
+    Aprendendo e aprimorando as habilidades com o framework Laravel, construindo o primeiro WebSite em Laravel, entendo o Fomato MVC, conhecendo a estrutura e praticando a sintaxe, metodos, rotas, entre outros.
+
+<h2>Aprendizado</h2>
 
 1. Baixando arquivos e configurando ambiente de trabalho, usando VSCode como editor, Composer, XAMP, Laravel Fremework e MySQL.
 
