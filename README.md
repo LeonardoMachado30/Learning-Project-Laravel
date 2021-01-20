@@ -36,4 +36,5 @@ Aprendendo e aprimorando as habilidades com o framework Laravel, construindo o p
 9. **Eloquent**, criando tabelas no **Model**, criando tabelas no **phpMyAdmin**, recebendo dados do banco de dados e **imprimindo** na pagina **"welcome"**.
     1. Model singular
     2. Tabelas plural
-    
+
+10. Adicionando registro ao banco via formulario usando metodo **POST** e o metodo **SAVE** para persistencia de dados.
