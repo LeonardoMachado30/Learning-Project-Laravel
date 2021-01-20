@@ -5,3 +5,7 @@
 #navbar img{
     width: 50px;
 }
+
+.container{
+    margin-top: 5rem !important;
+}

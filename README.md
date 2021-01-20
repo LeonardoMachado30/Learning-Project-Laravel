@@ -12,6 +12,7 @@ Aprendendo e aprimorando as habilidades com o framework Laravel, construindo o p
     1. Para ver o conteudo e necessario: Laravel Framework, Composer, XAMP (ou equivalente), VSCode (ou equivalente).
 
 2. Criando **Hello World** no arquivo **"Welcome"** conhecendo os componentes do Laravel como views e rotas.
+    1. iniciar servidor com **'php artisan serve'**
 
 3. Aprendendo **Rotas** no arquivo **"Routes/Web"** e passando valores e variaveis para serem impressos na tela.
 
@@ -46,3 +47,12 @@ Aprendendo e aprimorando as habilidades com o framework Laravel, construindo o p
         Nesta etapa tambem foi feita a **formatação** da pagina usando o **bootstrap** para melhor visualização dos dados, imprimando dentro do foreach no arquivo **'viewa/welcome'**.
 
 11. Flash Messages, adicionando mensagens ao usuario por **session** usando metodo **'with'** para dar um feedback ao usuario.
+    1. Adicionando o **'with'** ao redirecionamento dentro de **'EventController'**.
+    2. Validando se o evento foi cadastrado com sucesso e informando na tela.
+
+12. Salvando imagens pelo Laravel
+    1. Fazer upload de imagem pelo Laravel.
+    2. Mudando o enctype e criar o input.
+    3. Fazer tratamento de verificacao da imagem.
+    4. Salvar imagem com nome unico.
+    5. no banco salvar o patch da imagem.

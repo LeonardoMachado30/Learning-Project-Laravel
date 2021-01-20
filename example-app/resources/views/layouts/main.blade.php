@@ -36,7 +36,12 @@
                 </div>
             </nav>
         </header>
-        @yield('content')
+        <main>
+            @if(session('msg'))           
+                {{ session('msg')}}
+            @endif
+            @yield('content')
+        </main>
         <footer>
             <p>HDC Events &copy; 2020</p>
         </footer>
