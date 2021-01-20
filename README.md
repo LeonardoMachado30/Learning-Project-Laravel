@@ -37,4 +37,10 @@ Aprendendo e aprimorando as habilidades com o framework Laravel, construindo o p
     1. Model singular
     2. Tabelas plural
 
-10. Adicionando registro ao banco via formulario usando metodo **POST** e o metodo **SAVE** para persistencia de dados.
+10. Adicionando registro ao banco de dados via formulario usando metodo **POST** e o metodo **SAVE** para persistencia de dados.
+    1. Criando a rota para **'events'**.
+    2. Criando o metodo **store** com um parametro **'$Request'** do tipo **'Resquest'** em **EventController**,por convenção do **Laravel**, para enviar dados do formulario para o banco de dados.
+    3. enviando o **'$event'** para **'save()'** para persistencia de dados.
+    4. **redirecionando** usuario para o inicio
+
+        Nesta etapa tambem foi feita a **formatação** da pagina usando o **bootstrap** para melhor visualização dos dados, imprimando dentro do foreach no arquivo **'viewa/welcome'**.
