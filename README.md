@@ -44,3 +44,5 @@ Aprendendo e aprimorando as habilidades com o framework Laravel, construindo o p
     4. **redirecionando** usuario para o inicio
 
         Nesta etapa tambem foi feita a **formatação** da pagina usando o **bootstrap** para melhor visualização dos dados, imprimando dentro do foreach no arquivo **'viewa/welcome'**.
+
+11. Flash Messages, adicionando mensagens ao usuario por **session** usando metodo **'with'** para dar um feedback ao usuario.
