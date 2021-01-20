@@ -9,7 +9,7 @@ Aprendendo e aprimorando as habilidades com o framework Laravel, construindo o p
 
 1. Baixando arquivos e configurando ambiente de trabalho, usando V**SCode** como editor, **Composer**, **XAMP**, **Laravel Fremework** e **MySQL**.
 
-    1. 1 Para ver o conteudo e necessario: Laravel Framework, Composer, XAMP (ou equivalente), VSCode (ou equivalente).
+    1. Para ver o conteudo e necessario: Laravel Framework, Composer, XAMP (ou equivalente), VSCode (ou equivalente).
 
 2. Criando Hello World e conhecendo os componentes do Laravel.
 
