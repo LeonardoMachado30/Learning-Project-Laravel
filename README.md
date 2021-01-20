@@ -19,4 +19,4 @@ Aprendendo e aprimorando as habilidades com o framework Laravel, construindo o p
 
 5. Criando Layouts para evitar repeticão de codigo, usando o comando @section e @export para definir o caminho do layout.
 
-6. Parametros nas rotas de forma obrigatoria e opcional
+6. Parametros nas rotas de forma obrigatoria e opcional.
