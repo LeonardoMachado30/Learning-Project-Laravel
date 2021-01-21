@@ -10,7 +10,7 @@
             @foreach($events as $event)
                 <div class="col">
                     <div class="card">
-                        <img src="/img/baixados.jpeg" class="card-img-top" alt="...">
+                        <img src="/img/events/{{ $event->image  }}" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">{{ $event->title }}</h5>
                             <p class="card-text">{{ $event->description }}</p>
