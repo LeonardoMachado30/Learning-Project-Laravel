@@ -55,4 +55,5 @@ Aprendendo e aprimorando as habilidades com o framework Laravel, construindo o p
     2. Mudando o enctype e criar o input.
     3. Fazer tratamento de verificacao da imagem.
     4. Salvar imagem com nome unico.
-    5. no banco salvar o patch da imagem.
+    5. No banco salvar o patch da imagem.
+    6. Aprentando a imagem salva em seu respectivo card
