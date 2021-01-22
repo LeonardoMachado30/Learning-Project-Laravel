@@ -57,3 +57,8 @@ Aprendendo e aprimorando as habilidades com o framework Laravel, construindo o p
     4. Salvar imagem com nome unico.
     5. No banco salvar o patch da imagem.
     6. Aprentando a imagem salva em seu respectivo card
+
+13. Resgatando um registro do banco de dados.
+    1. Regastando apenas um registro pelo Eloquent.
+    2. Utilizando o metodo findOrFail.
+    3. Criando informações dos eventos.
