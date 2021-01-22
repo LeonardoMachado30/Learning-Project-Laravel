@@ -62,3 +62,8 @@ Aprendendo e aprimorando as habilidades com o framework Laravel, construindo o p
     1. Regastando apenas um registro pelo Eloquent.
     2. Utilizando o metodo findOrFail.
     3. Criando informações dos eventos.
+
+14. Salvando arquivos JSON no banco de dados.
+    1. Criando uma list de checkbox.
+    2. tranformando a checkbox em um array em json para enviar para o banco de dados.
+    3. Salvando os dados selecionado pelo usuario no banco de dados como array.

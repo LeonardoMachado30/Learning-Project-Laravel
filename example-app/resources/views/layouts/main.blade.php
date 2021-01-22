@@ -15,7 +15,7 @@
         <!--CSS da aplicação-->
         <link rel="stylesheet" href="/css/style.css">
     </head>
-    <body>
+    <body class="container-fluid">
         <header>
             <nav class="navbar navbar-expand-lg navbar-light">
                 <div class="collapse navbar-collapse" id="navbar">
@@ -42,7 +42,7 @@
             @endif
             @yield('content')
         </main>
-        <footer>
+        <footer class="">
             <p>HDC Events &copy; 2020</p>
         </footer>
         <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>

@@ -2,10 +2,23 @@
     font-family: 'Roboto';
 }
 
-#navbar img{
-    width: 50px;
+header{
+    padding-left: 10px;
+    font-size: 15pt;
+    margin-bottom: 2rem; 
+    background-color: rgba(0, 0, 0, 0.377);
 }
 
-.container{
-    margin-top: 5rem !important;
+.navbar-nav{
+    padding-left: 10px !important;
+}
+
+.nav-link{
+    color: white !important;
+    padding-left: 30px !important;
+}
+
+#navbar img{
+    width: 70px;
+    margin-left: 1rem;
 }
