@@ -14,7 +14,7 @@
                         <div class="card-body">
                             <h5 class="card-title">{{ $event->title }}</h5>
                             <p class="card-text">{{ $event->description }}</p>
-                            <button type="button" class="btn btn-primary">Saiba Mais</button>
+                            <a href="/events/{{ $event->id }}">Saiba Mais</a>
                         </div>
                     </div>
                 </div>

@@ -24,6 +24,7 @@ class EventController extends Controller
     public function store(Request $request){
 
         $event = new Event;
+
         //reebendo os valores dos inputs da tela views/events/create
         $event->title = $request->title;
         $event->city = $request->city;
@@ -43,11 +44,21 @@ class EventController extends Controller
 
             $event->image = $imageName;
         } 
-        
         //metodo para salvar dados
         $event->save();
 
         //enviando feedback para usuario
         return redirect('/')->with('msg', 'Evento criado com sucesso!');
+    
+    }
+
+
+    public function show($id){
+
+        $event = Event::findOrFail($id);
+
+        return view('events.show', ['event' => $event]);
+
     }
 }
+
