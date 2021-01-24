@@ -72,3 +72,8 @@ Aprendendo e aprimorando as habilidades com o framework Laravel, construindo o p
     1. Criando input do tipo **date**.
     2. Criar um campo **"dateTime"** via **migration**.
     3. Enviar dados via **Controller** pelo **POST**.
+
+16. Busca no Laravel.
+    1. Consulta o banco de dados.
+    2. Criar uma pesquisa a partir do resultado da consulta.
+    3. Filtra e apresentar para o usuario final.
