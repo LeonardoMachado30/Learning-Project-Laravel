@@ -1,11 +1,13 @@
 * {
     font-family: 'Roboto';
 }
-
-/* Estilo do navbar*/
-.navbar{
-    border-radius: 0px 0px 10px 10px;
+body{
+    background-color: grey;
 }
+/* Estilo do navbar*/
+/*.navbar{
+    border-radius: 0px 0px 10px 10px;
+}*/
 .nav-link,
 .navbar-brand {
     color: white !important;
@@ -14,6 +16,55 @@
 #navbar img{
     width: 70px;
     margin-left: 1rem;
+}
+
+/* Estilo do topo*/
+img-fluid{
+    position: relative;
+    margin-top: -200px !important;
+}
+
+.form-control-custom{
+    position: absolute !important;
+    width: 40rem;
+}
+
+.search-custom{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -500px;
+    color: white;
+}
+.label-custom{
+    margin-left: 100px;
+}
+
+@media only screen and (max-width: 800px){
+    .label-custom{
+        margin-left: 0px;
+    }
+    .search-custom{
+        margin-top: -200px;
+        margin-left: 100px;
+    }
+    .form-control{
+        position: absolute !important;
+        width: 18rem;
+    }
+}
+/* Responsividade */
+@media only screen and (max-width: 800px){
+    .label-custom{
+        margin-left: 50px;
+    }
+    .search-custom{
+        margin-top: -200px;
+        margin-left: 70px;
+    }
+    .form-control{
+        position: absolute !important;
+        width: 25rem;
+    }
 }
 
 /* Estilo do alerta*/
@@ -25,13 +76,14 @@
 }
 
 /* Estilo dos Cards*/
-.container-lg{
-
-    background-image: linear-gradient( to bottom, white, rgb(169,169,169), transparent 100%);
-    margin-top: 1rem;
+.container-custom{
+    background-image: linear-gradient( to top, blue,blue,blue, transparent 100%);
+    margin-top: 15rem;
     margin-bottom: 1rem;
-    padding-top: 1rem !important;
+    padding-top: 5rem !important;
     padding-bottom: 1rem !important;
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
     border-radius: 10px;
 }
 
@@ -70,14 +122,27 @@ ion-icon{
 .custom-show{
     padding-bottom: 6rem !important;
 }
+custom-descripton{
+    margin-top: 20px;
+}
+
+.custom-form{
+    
+}
+
+.form-control-custom{
+    width: 50rem !important;
+}
 
 /* Estilo do footer*/
 .footer{
     align-items: center !important;
     align-self: center !important;
     text-align-last: center !important;
+    padding-top: 0rem;
     padding-bottom: 1rem;
-    color: #000000 !important;
+    color: #ffffff !important;
     border-radius: 10px 10px 0px 0px;
     bottom:0;
+    /*background-image: linear-gradient( to top, black,black,white, transparent 100%);
 }

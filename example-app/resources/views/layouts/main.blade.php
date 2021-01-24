@@ -40,13 +40,19 @@
             </nav>
         </header>
         <main>
-            @if(session('msg'))
-            <div class="alert alert-sucess alert-sucess fade show" role="alert">
-                {{ session('msg')}}
-                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            <div class="row">
+                <div class="col-sm">
+                    @if(session('msg'))
+                        <div class="alert alert-sucess alert-sucess fade show" role="alert">
+                            {{ session('msg')}}
+                            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                        </div>
+                    @endif
+                </div>
             </div>
-            @endif
+            
             @yield('content')
+
         </main>
         <footer class="footer bg-footer container-fluid">
             <div>

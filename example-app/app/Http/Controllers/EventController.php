@@ -11,9 +11,22 @@ class EventController extends Controller
     public function index(){
         
         //comando "Event::all()" pega todos os dados do banco
-        $events = Event::all();
+        $search = request('search');
+
+        if($search){
+
+            $events = Event::where([
+                ['title', 'like', '%'.$search.'%']
+            ])->get();
+
+        }else{
+
+            $events = Event::all();
+        
+        }
+
         //enviando dados para a view "welcome".
-        return view('welcome', ['events' => $events]);
+        return view('welcome', ['events' => $events, 'search' => $search]);
 
     }
 

@@ -34,10 +34,10 @@
             </div>
             <div class="form-group">
                 <label for="title">Descrição</label>
-            <textarea name="description" id="description" class="form-control" placeholder="O que vai acontecer no evento?"></textarea>
+                <textarea name="description" id="description" class="form-control" placeholder="O que vai acontecer no evento?"></textarea>
             </div>
             <div class="form-group">
-                <label for="title">Adicione itens de infraestrurura:</label>
+                <label for="title">Adicione itens de infraestrutura:</label>
             </div>
             <div class="form-group">
                 <label for="title">Cadeiras</label>
