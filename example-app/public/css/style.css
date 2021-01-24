@@ -2,23 +2,49 @@
     font-family: 'Roboto';
 }
 
-header{
-    padding-left: 10px;
-    font-size: 15pt;
-    margin-bottom: 2rem; 
-    background-color: rgba(0, 0, 0, 0.377);
-}
-
-.navbar-nav{
-    padding-left: 10px !important;
-}
-
-.nav-link{
+/* Estilo do navbar*/
+.nav-link,
+.navbar-brand {
     color: white !important;
-    padding-left: 30px !important;
 }
 
 #navbar img{
     width: 70px;
     margin-left: 1rem;
 }
+
+/* Estilo do alerta*/
+.alert-custom{
+    align-items: center !important;
+    align-self: center !important;
+    text-align-last: center !important;
+    position: absolute !important;
+}
+
+/* Estilo dos Cards*/
+.border{
+    box-shadow: 5px 5px 15px grey;
+}
+
+.image-size{
+    height: 20rem;
+}
+.container-lg{
+    background-color: rgb(135,206,250) !important;
+    padding-top: 4rem !important;
+    padding-bottom: 4rem !important;
+    
+
+}
+/* Estilo do footer*/
+.footer{
+    align-items: center !important;
+    align-self: center !important;
+    text-align-last: center !important;
+    background-color: black;
+    padding-bottom: 1rem;
+    color: #ffffff !important;
+
+}
+
+

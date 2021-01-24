@@ -28,6 +28,7 @@ class EventController extends Controller
         //reebendo os valores dos inputs da tela views/events/create
         $event->title = $request->title;
         $event->city = $request->city;
+        $event->date = $request->date;
         $event->private = $request->private;
         $event->description = $request->description;
         $event->items = $request->items;
