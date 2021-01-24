@@ -3,6 +3,9 @@
 }
 
 /* Estilo do navbar*/
+.navbar{
+    border-radius: 0px 0px 10px 10px;
+}
 .nav-link,
 .navbar-brand {
     color: white !important;
@@ -22,29 +25,59 @@
 }
 
 /* Estilo dos Cards*/
+.container-lg{
+
+    background-image: linear-gradient( to bottom, white, rgb(169,169,169), transparent 100%);
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding-top: 1rem !important;
+    padding-bottom: 1rem !important;
+    border-radius: 10px;
+}
+
+.image-custom{
+    height: 12rem;
+    padding-right: 5px;
+    padding-left: 5px;
+    padding-top: 5px;
+    border-radius: 10px;
+}
+
 .border{
     box-shadow: 5px 5px 15px grey;
+    border-radius: 10px;
 }
 
-.image-size{
-    height: 20rem;
+/* Estilo das informações*/
+.image-user{
+    border-radius: 3rem 3rem 3rem 3rem;
+    width: 30rem;
+    height: 25rem;
 }
-.container-lg{
-    background-color: rgb(135,206,250) !important;
-    padding-top: 4rem !important;
-    padding-bottom: 4rem !important;
-    
 
+li {
+    list-style-type: none !important;
 }
+
+ion-icon{
+    color: rgb(139,0,0);
+}
+
+.space-custom{
+    margin-top: 1rem;
+}
+
+.custom-show{
+    padding-bottom: 6rem !important;
+}
+
 /* Estilo do footer*/
 .footer{
     align-items: center !important;
     align-self: center !important;
     text-align-last: center !important;
-    background-color: black;
     padding-bottom: 1rem;
-    color: #ffffff !important;
-
+    color: #000000 !important;
+    border-radius: 10px 10px 0px 0px;
+    bottom:0;
 }
-
-

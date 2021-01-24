@@ -15,7 +15,7 @@
             </div>
             <div class="form-group">
                 <label for="title">Evento</label>
-                <input type="text" class="form-control" id="title" name="title" placeholder="Nome do usuario">
+                <input type="text" class="form-control" id="title" name="title" placeholder="Nome do evento">
             </div>
             <div class="form-group">
                 <label for="date">Data</label>
@@ -38,9 +38,6 @@
             </div>
             <div class="form-group">
                 <label for="title">Adicione itens de infraestrurura:</label>
-                <div class="form-group">
-                    <input type="checkbox" name="items[]" value="Criar Evento">
-                </div>
             </div>
             <div class="form-group">
                 <label for="title">Cadeiras</label>
@@ -69,8 +66,6 @@
             <input type="submit" class="btn btn-primary" value="Criar evento" style="margin-top: 10px;">
         </form>
     </div>
-
-
 </div>
 
 @endsection

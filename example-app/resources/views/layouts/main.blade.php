@@ -19,37 +19,37 @@
         <header>
             <nav class="navbar navbar-expand-lg navbar-light bg-dark">
                 <div class="container-fluid">
-                    <a class="navbar-brand" href="/">Inicio</a>
+                    <a class="navbar-toggler" href="/">Inicio</a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+                        <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link" href="/">Eventos</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/events/create">Criar Eventos</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/">Entrar</a>
-                        </li>
-                    </ul>
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="/">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/events/create">Criar Eventos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/">Entrar</a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </nav>
-            
         </header>
         <main>
             @if(session('msg'))
-            <div class="alert alert-success alert-custom" role="alert">           
+            <div class="alert alert-sucess alert-sucess fade show" role="alert">
                 {{ session('msg')}}
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
             </div>
             @endif
             @yield('content')
         </main>
         <footer class="footer bg-footer container-fluid">
-            <div class="">
+            <div>
                 <p>HDC Events &copy; 2020</p>
             </div>
         </footer>
