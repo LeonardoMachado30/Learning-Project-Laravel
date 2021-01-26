@@ -20,6 +20,6 @@ class Event extends Model
 
     //chamando somente 1 usuario
     public function user() {
-        return $this->belongsto('App\Models\User');
+        return $this->belongsTo('App\Models\User');
     }
 }
