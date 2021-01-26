@@ -59,6 +59,12 @@ class EventController extends Controller
 
             $event->image = $imageName;
         } 
+
+        //pegando o usuario logado
+        $user = auth()->user();
+        //atribundo o id do usuario para a chave estrangeira
+        $event->user_id = $user->id;
+
         //metodo para salvar dados
         $event->save();
 

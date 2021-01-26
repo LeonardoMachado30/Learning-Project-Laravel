@@ -31,9 +31,29 @@
                             <li class="nav-item">
                                 <a class="nav-link" href="/events/create">Criar Eventos</a>
                             </li>
+                            <!--Validando se esta logado-->
+                            @auth
                             <li class="nav-item">
-                                <a class="nav-link" href="/">Entrar</a>
+                                <a href="/dashboard" class="nav-link">Meus eventos</a>
                             </li>
+                            <li class="nav-item">
+                                <form action="/logout" method="POST">
+                                    @csrf
+                                    <a href="/logout" class="nav-link" 
+                                    onclick="event.preventDefault();
+                                    this.closest('form').submit();">
+                                    Sair</a>
+                                </form>
+                            </li>
+                            @endauth
+                            @guest
+                            <li class="nav-item">
+                                <a class="nav-link" href="/login">Entrar</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/register">Registrar</a>
+                            </li>
+                            @endguest
                         </ul>
                     </div>
                 </div>
@@ -43,10 +63,9 @@
             <div class="row">
                 <div class="col-sm">
                     @if(session('msg'))
-                        <div class="alert alert-sucess alert-sucess fade show" role="alert">
-                            {{ session('msg')}}
-                            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-                        </div>
+                        <script>
+                            window.alert('{{ session('msg')}}');
+                        </script>                         
                     @endif
                 </div>
             </div>

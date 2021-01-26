@@ -20,8 +20,7 @@ body{
 
 /* Estilo do topo*/
 img-fluid{
-    position: relative;
-    margin-top: -200px !important;
+    position: relative !important;
 }
 
 .form-control-custom{
@@ -36,12 +35,26 @@ img-fluid{
     color: white;
 }
 .label-custom{
-    margin-left: 100px;
+    margin-left: 200px;
+}
+.input-custom{
+    width: 40rem !important;
 }
 
+.msg-custom{
+    position: absolute;
+    color: white;
+    margin-top: 1rem;
+    background-color: rgb(35, 148, 35);
+    border-radius: 10px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+/* Responsividade */
 @media only screen and (max-width: 800px){
     .label-custom{
-        margin-left: 0px;
+        margin-left: 60px;
     }
     .search-custom{
         margin-top: -200px;
@@ -49,21 +62,7 @@ img-fluid{
     }
     .form-control{
         position: absolute !important;
-        width: 18rem;
-    }
-}
-/* Responsividade */
-@media only screen and (max-width: 800px){
-    .label-custom{
-        margin-left: 50px;
-    }
-    .search-custom{
-        margin-top: -200px;
-        margin-left: 70px;
-    }
-    .form-control{
-        position: absolute !important;
-        width: 25rem;
+        width: 20rem !important;
     }
 }
 
@@ -77,11 +76,11 @@ img-fluid{
 
 /* Estilo dos Cards*/
 .container-custom{
-    background-image: linear-gradient( to top, blue,blue,blue, transparent 100%);
-    margin-top: 15rem;
+    background-image: linear-gradient( to bottom ,transparent, #0F0F0F, blue 90%, transparent 100%);
+    margin-top: 20rem;
     margin-bottom: 1rem;
-    padding-top: 5rem !important;
-    padding-bottom: 1rem !important;
+    padding-top: 4rem !important;
+    padding-bottom: 2rem !important;
     padding-left: 1rem !important;
     padding-right: 1rem !important;
     border-radius: 10px;
@@ -120,7 +119,11 @@ ion-icon{
 }
 
 .custom-show{
+    padding-top: 2rem;
     padding-bottom: 6rem !important;
+    margin-top: 0rem;
+    background-color: white;
+    border-radius: 0px 0px 10px 10px;
 }
 custom-descripton{
     margin-top: 20px;
@@ -139,10 +142,9 @@ custom-descripton{
     align-items: center !important;
     align-self: center !important;
     text-align-last: center !important;
-    padding-top: 0rem;
+    padding-top: 1rem;
     padding-bottom: 1rem;
     color: #ffffff !important;
     border-radius: 10px 10px 0px 0px;
     bottom:0;
-    /*background-image: linear-gradient( to top, black,black,white, transparent 100%);
 }

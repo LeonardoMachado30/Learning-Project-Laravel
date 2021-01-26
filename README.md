@@ -77,3 +77,14 @@ Aprendendo e aprimorando as habilidades com o framework Laravel, construindo o p
     1. Consulta o banco de dados.
     2. Criar uma pesquisa a partir do resultado da consulta.
     3. Filtra e apresentar para o usuario final.
+
+17. Autenticação no **Laravel** (**login**/**Registro**)
+    1. Usando **Jetstream** para autenticar usuario.
+    2. Intalando componentes.
+    3. Adaptando **Jetstream** ao projeto
+    4. Entendendo as funcionalidade do **Jetstream**.
+
+18. **Relation (one to many)**
+    1. Criando relacões entre os bando de dados com chaves primarias.
+    2. Criando uma chave estrangeira no banco de dados.
+    3. Relacionando 1 usuario para varios eventos.
