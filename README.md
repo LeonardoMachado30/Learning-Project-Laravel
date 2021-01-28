@@ -93,4 +93,4 @@ Aprendendo e aprimorando as habilidades com o framework Laravel, construindo o p
     1. Consultando o id do usuario que criou o evento e passando para a view Show
     2. Inserindo o nome do usuario consultado na view Show.
 
-20. 
+20. Criando uma Dashboard
