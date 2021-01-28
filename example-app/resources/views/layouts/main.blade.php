@@ -15,14 +15,15 @@
         <!--CSS da aplicação-->
         <link rel="stylesheet" href="/css/style.css">
     </head>
-    <body class="container">
-        <header>
+    <body>
+        <header class="container-fluid">
             <nav class="navbar navbar-expand-lg navbar-light bg-dark">
                 <div class="container-fluid">
                     <a class="navbar-toggler" href="/">Inicio</a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
+                    
                     <div class="collapse navbar-collapse" id="navbarNavDropdown">
                         <ul class="navbar-nav">
                             <li class="nav-item">
@@ -59,25 +60,29 @@
                 </div>
             </nav>
         </header>
+
         <main>
+            @if(session('msg'))
             <div class="row">
-                <div class="col-sm">
-                    @if(session('msg'))
-                        <script>
-                            window.alert('{{ session('msg')}}');
-                        </script>                         
-                    @endif
+                <div class="col">
+                    <script>
+                        window.alert('{{ session('msg')}}');
+                    </script>
                 </div>
-            </div>
-            
+            </div>                         
+            @endif
+                
             @yield('content')
 
         </main>
+
         <footer class="footer bg-footer container-fluid">
             <div>
                 <p>HDC Events &copy; 2020</p>
             </div>
         </footer>
+
+
         <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
     </body>
 </html>

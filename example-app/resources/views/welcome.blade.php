@@ -5,51 +5,62 @@
 @section('content')
 
     <!-- Imprimindo dados do banco de dados-->
-    <div class="row">
-        <div class="col">
-            <div class="custom-top-backgroud-color"> </div>
-            <img src="/img/imagem_de_fundo.jpg" alt="Imagem de Fundo" class="img-fluid">
-            <div id="search-container" class="col-md-6 search-custom">
-                <form action="/" method="GET" class="form-control-custom">
-                    <label for="search" id="search" class="display-5 label-custom">Pesquisar</label>
-                    <input class="form-control input-custom" type="text" id="search" name="search"  placeholder="Procurar">
-                </form>
-            </div>
-        </div>          
-    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col">
+                <div class="custom-background bg-custom">
+                    <form action="/" method="GET" class="">
+                        <div class="mb-5">
+                            <input class="form-control" type="text" id="search" name="search"  placeholder="Pesquisar" />
+                        </div>    
+                    </form>
+                </div>
+            </div>      
+        </div>
 
-    <div class="row">
-        <div class="col">
-            <div class="container-custom">
-                @if($search)
-                    <h2>buscando por: {{ $search }} </h2>
-                @else
-                    <h2 style="color: white;">Proximos eventos</h2>
-                @endif
-                <div class="row row-cols-2 row-cols-md-3 g-4">
-                    @foreach($events as $event)
-                        <div class="col">
-                            <div class="card border">
-                                <img src="/img/events/{{ $event->image  }}" class="card-img-top img-fluid image-custom" alt="...">
-                                <div class="card-body">
-                                    <p class="card-text"><ion-icon name="calendar-outline"></ion-icon> {{ \Carbon\Carbon::parse($event->date)->format('d/m/Y') }}  </p>
-                                    <h5 class="card-title">Título: {{ $event->title }}</h5>
-                                    <p class="card-text">Descrição: {{ $event->description }}</p>
-                                    <a href="/events/{{ $event->id }}" class="btn btn-primary" tabindex="-1" role="button">Saiba Mais</a>
-                                </div>
-                            </div>
-                        </div>
-                    @endforeach
-                    @if(count($events) == 0 && $search)
-                        <h3>Não foi possivel encontrar nem um evento com {{ $search }}! </h3>
-                    
-                    @elseif(count($events) == 0)
-                        <h3>Não ha eventos diponíveis</h3>
-                    @endif
+        @if($search)
+        <div class="row">
+            <div class="col">
+                <div class="">
+                    <h2>buscando por: {{ $search }} </h2> 
                 </div>
             </div>
         </div>
-    </div>
+        @else
+        <div class="row g-0">
+            <div class="col">
+                <h2 class="display-8">Proximos eventos</h2>
+            </div>
+        </div>            
+        @endif
+
+        <div class="row row-cols-md-4 g-0 container-custom">
+            @foreach($events as $event)
+            <div class="col g-4">
+                <div class="card border">
+                    <img src="/img/events/{{ $event->image  }}" class="card-img-top img-fluid image-custom" alt="...">
+                    <div class="card-body">
+                        <p class="card-text"><ion-icon name="calendar-outline"></ion-icon> {{ \Carbon\Carbon::parse($event->date)->format('d/m/Y') }}  </p>
+                        <h5 class="card-title">Título: {{ $event->title }}</h5>
+                        <p class="card-text">Descrição: {{ $event->description }}</p>
+                        <a href="/events/{{ $event->id }}" class="btn btn-primary" tabindex="-1" role="button">Saiba Mais</a>
+                    </div>
+                </div>
+            </div>
+            @endforeach
+            
+            @if(count($events) == 0 && $search)
+            <div class="col" style="color: white;">
+                <h3>Não foi possivel encontrar nem um evento com o nome: {{ $search }}! </h3>
+            </div>
+            @elseif(count($events) == 0)
+            <div class="col" style="color: white;">
+                <h3>Não ha eventos diponíveis</h3>  
+            </div>
+            @endif
+        </div>
+
+    </div>  
     {{-- Comentario pelo Blande --}}
 
 @endsection

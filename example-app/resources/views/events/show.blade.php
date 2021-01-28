@@ -3,8 +3,8 @@
 @section('title', $event->title)
 
 @section('content')
-<div class="container-lg custom-show">
-    <div class="col-md-10 offset-md-1">
+<div class="container custom-show">
+    <div class="col-md-8 offset-md-2">
         <div class="row">
             <div id="image-container" class="col-md-6">
                 <img src="/img/events/{{ $event->image }}" class="img-fluid image-user" alt="{{ $event->title }}">

@@ -1,46 +1,20 @@
 * {
+
     font-family: 'Roboto';
 }
+
 body{
-    background-color: grey;
+    background-color: white;
 }
+
 /* Estilo do navbar*/
-/*.navbar{
-    border-radius: 0px 0px 10px 10px;
-}*/
+
 .nav-link,
 .navbar-brand {
     color: white !important;
 }
 
-#navbar img{
-    width: 70px;
-    margin-left: 1rem;
-}
-
-/* Estilo do topo*/
-img-fluid{
-    position: relative !important;
-}
-
-.form-control-custom{
-    position: absolute !important;
-    width: 40rem;
-}
-
-.search-custom{
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: -500px;
-    color: white;
-}
-.label-custom{
-    margin-left: 200px;
-}
-.input-custom{
-    width: 40rem !important;
-}
-
+/* Estilo da mensagem*/
 .msg-custom{
     position: absolute;
     color: white;
@@ -51,39 +25,44 @@ img-fluid{
     padding-right: 1rem;
 }
 
-/* Responsividade */
-@media only screen and (max-width: 800px){
-    .label-custom{
-        margin-left: 60px;
-    }
-    .search-custom{
-        margin-top: -200px;
-        margin-left: 100px;
-    }
-    .form-control{
-        position: absolute !important;
-        width: 20rem !important;
-    }
+/* Estilo do search*/
+.custom-background{
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+    padding-left: 35%;
+    padding-right: 35%;
+    color: white;
 }
+.bg-custom{
+    background-color: black;
+    background-image: linear-gradient(#212529, rgb(40, 90, 146), white);
+}
+
+.input-custom{
+    width: 40rem !important;
+}
+
+/* Responsividade */
 
 /* Estilo do alerta*/
 .alert-custom{
-    align-items: center !important;
-    align-self: center !important;
-    text-align-last: center !important;
     position: absolute !important;
 }
 
 /* Estilo dos Cards*/
 .container-custom{
-    background-image: linear-gradient( to bottom ,transparent, #0F0F0F, blue 90%, transparent 100%);
-    margin-top: 20rem;
+    background-image: linear-gradient( to bottom ,transparent, blue , #0F0F0F);
+    margin-top: 0rem;
     margin-bottom: 1rem;
-    padding-top: 4rem !important;
+    padding-top: 2rem !important;
     padding-bottom: 2rem !important;
-    padding-left: 1rem !important;
-    padding-right: 1rem !important;
+    padding-left: 2rem !important;
+    padding-right: 2rem !important;
     border-radius: 10px;
+}
+
+h2{
+    padding-left: 2rem;
 }
 
 .image-custom{
@@ -111,7 +90,7 @@ li {
 }
 
 ion-icon{
-    color: rgb(139,0,0);
+    color: rgb(78, 91, 200);
 }
 
 .space-custom{
@@ -120,17 +99,14 @@ ion-icon{
 
 .custom-show{
     padding-top: 2rem;
-    padding-bottom: 6rem !important;
+    padding-bottom: 4rem !important;
     margin-top: 0rem;
     background-color: white;
     border-radius: 0px 0px 10px 10px;
 }
-custom-descripton{
-    margin-top: 20px;
-}
 
-.custom-form{
-    
+#description-container{
+    margin-top: 1rem !important;
 }
 
 .form-control-custom{
@@ -144,7 +120,7 @@ custom-descripton{
     text-align-last: center !important;
     padding-top: 1rem;
     padding-bottom: 1rem;
-    color: #ffffff !important;
+    color: #000000 !important;
     border-radius: 10px 10px 0px 0px;
     bottom:0;
 }
