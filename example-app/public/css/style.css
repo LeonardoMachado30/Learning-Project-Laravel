@@ -113,6 +113,17 @@ ion-icon{
     width: 50rem !important;
 }
 
+
+/* Dashboard*/
+.dashboard-title-container{
+    margin-top: 2rem;
+    margin-left: 5%;
+}
+
+.dashboard-events-container th{
+    width: 25%;
+}
+
 /* Estilo do footer*/
 .footer{
     align-items: center !important;
