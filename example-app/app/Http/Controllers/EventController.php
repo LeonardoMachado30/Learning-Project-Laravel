@@ -11,7 +11,7 @@ use App\Models\User;
 class EventController extends Controller
 {
     public function index(){
-        
+
         //comando "Event::all()" pega todos os dados do banco
         $search = request('search');
 
@@ -24,7 +24,6 @@ class EventController extends Controller
         }else{
 
             $events = Event::all();
-        
         }
 
         //enviando dados para a view "welcome".
@@ -47,7 +46,7 @@ class EventController extends Controller
         $event->private = $request->private;
         $event->description = $request->description;
         $event->items = $request->items;
-        
+
         //image uploado
         if($request->hasfile('image') && $request->file('image')->isValid()){
 
@@ -60,7 +59,7 @@ class EventController extends Controller
             $requestImage->move(public_path('img/events'), $imageName);
 
             $event->image = $imageName;
-        } 
+        }
 
         //pegando o usuario logado
         $user = auth()->user();
@@ -72,7 +71,7 @@ class EventController extends Controller
 
         //enviando feedback para usuario
         return redirect('/')->with('msg', 'Evento criado com sucesso!');
-    
+
     }
 
 
@@ -80,7 +79,7 @@ class EventController extends Controller
 
         $event = Event::findOrFail($id);
 
-        //Consultando usuario 
+        //Consultando usuario
         // Função first() procura o primeiro ID e encerra a busca
         // Função toArray() converte os dados para array
         $eventOwner = User::where('id', $event->user_id)->first()->toArray();
