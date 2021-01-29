@@ -93,4 +93,7 @@ Aprendendo e aprimorando as habilidades com o framework Laravel, construindo o p
     1. Consultando o id do usuario que criou o evento e passando para a view Show
     2. Inserindo o nome do usuario consultado na view Show.
 
-20. Criando uma Dashboard
+20. Criando uma Dashboard.
+    1. Criando uma dashboard propria sem usar o padrão Jetstream.
+    2. Criando a rota e a logica da dashboard para apresentar o usuario na sua propria dashboard.
+    3. formatando a dashboard.
