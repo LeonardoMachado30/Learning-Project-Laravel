@@ -124,6 +124,10 @@ ion-icon{
     width: 25%;
 }
 
+.dashboard-events-container form{
+    display: inline-block;
+}
+
 /* Estilo do footer*/
 .footer{
     align-items: center !important;
