@@ -90,10 +90,19 @@ Aprendendo e aprimorando as habilidades com o framework Laravel, construindo o p
     3. Relacionando 1 usuario para varios eventos.
 
 19. Exibindo dados do usuario na view
-    1. Consultando o id do usuario que criou o evento e passando para a view Show
-    2. Inserindo o nome do usuario consultado na view Show.
+    1. Consultando o id do usuario que criou o evento e passando para a **view** **Show**
+    2. Inserindo o nome do usuario consultado na **view** **Show**.
 
-20. Criando uma Dashboard.
-    1. Criando uma dashboard propria sem usar o padrão Jetstream.
-    2. Criando a rota e a logica da dashboard para apresentar o usuario na sua propria dashboard.
-    3. formatando a dashboard.
+20. Criando uma **Dashboard**.
+    1. Criando uma **dashboard** propria sem usar o padrão Jetstream.
+    2. Criando a rota e a logica da **dashboard** para apresentar o usuario na sua propria **dashboard**.
+    3. formatando a **dashboard**.
+
+21. **Deletano** eventos.
+    1. Criando uma **rota** nova.
+    2. Usando outro verbo **HTTP** **'Delete'**.
+    3. Fazendo a logica no **Controller** para persistir no banco.
+        1. Recebendo o **id** do evento.
+        2. Chamando o **metodo** **'delete()'**.
+        3. redirecionando para a **dashboard**.
+        4. criando os botões na **dashboard**.
