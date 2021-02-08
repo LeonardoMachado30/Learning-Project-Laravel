@@ -20,7 +20,8 @@ Route::get('/', [EventController::class, 'index']);
 Route::get('/events/create', [EventController::class, 'create'])->middleware('auth');
 Route::get('/events/{id}', [EventController::class, 'show']);
 Route::post('/events', [EventController::class, 'store']);
-Route::delete('/events/{id}', [EventController::class, 'destroy']);
+Route::delete('/events/{id}', [EventController::class, 'destroy'])->middleware('auth');
+Route::get('/events/{id}', [EventController::class, 'edit'])->middleware('auth');
 
 Route::get('/contact', function () {
     return view('contact');
@@ -28,3 +29,7 @@ Route::get('/contact', function () {
 
 Route::get('/dashboard', [EventController::class, 'dashboard'])->middleware('auth');
 
+/*Outra forma de fazer
+
+    Route::get('Rota', 'NameSpaceClasse@Metodo')->name('NomeDaRota');
+*/
