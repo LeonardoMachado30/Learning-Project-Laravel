@@ -106,3 +106,9 @@ Aprendendo e aprimorando as habilidades com o framework Laravel, construindo o p
         2. Chamando o **metodo** **'delete()'**.
         3. redirecionando para a **dashboard**.
         4. criando os botões na **dashboard**.
+
+22. **Editando** eventos.
+    1. Criando a **logica** de edição do registro.
+    2. Criando uma nova rota e uma **view** que mostra o **form** com os dados preenchidos.
+    3. Usando outro verbo **HTTP** **'PUT'**.
+    4. **Pesistir** a alteração por meio do action no **controller**.
