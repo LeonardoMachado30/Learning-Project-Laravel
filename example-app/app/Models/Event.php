@@ -17,6 +17,9 @@ class Event extends Model
     
     //Criando uma variavel do tipo protect com o dado Data
     protected $date = ['date'];
+    
+    //Descartando o token da edição
+    protected $guarded = [];
 
     //chamando somente 1 usuario
     public function user() {

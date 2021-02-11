@@ -10,32 +10,33 @@ use App\Models\User;
 
 class EventController extends Controller
 {
-    public function index(){
+    public function index()
+    {
 
         //comando "Event::all()" pega todos os dados do banco
         $search = request('search');
 
-        if($search){
+        if ($search) {
 
             $events = Event::where([
-                ['title', 'like', '%'.$search.'%']
+                ['title', 'like', '%' . $search . '%']
             ])->get();
-
-        }else{
+        } else {
 
             $events = Event::all();
         }
 
         //enviando dados para a view "welcome".
         return view('welcome', ['events' => $events, 'search' => $search]);
-
     }
 
-    public function create(){
+    public function create()
+    {
         return view('events.create');
     }
 
-    public function store(Request $request){
+    public function store(Request $request)
+    {
 
         $event = new Event;
 
@@ -48,7 +49,7 @@ class EventController extends Controller
         $event->items = $request->items;
 
         //image uploado
-        if($request->hasfile('image') && $request->file('image')->isValid()){
+        if ($request->hasfile('image') && $request->file('image')->isValid()) {
 
             $requestImage = $request->image;
 
@@ -71,11 +72,11 @@ class EventController extends Controller
 
         //enviando feedback para usuario
         return redirect('/')->with('msg', 'Evento criado com sucesso!');
-
     }
 
 
-    public function show($id){
+    public function show($id)
+    {
 
         $event = Event::findOrFail($id);
 
@@ -86,10 +87,10 @@ class EventController extends Controller
 
 
         return view('events.show', ['event' => $event, 'eventOwner' => $eventOwner]);
-
     }
 
-    public function dashboard() {
+    public function dashboard()
+    {
         $user = auth()->user();
 
         $events = $user->events;
@@ -97,19 +98,42 @@ class EventController extends Controller
         return view('events.dashboard', ['events' => $events]);
     }
 
-    public function destroy($id){
+    public function destroy($id)
+    {
 
         Event::findOrFail($id)->delete();
 
         return redirect('/dashboard')->with('msg', 'Evento excluido com sucesso!');
-
     }
 
-    public function edit($id) {
-
+    public function edit($id)
+    {
         $event = Event::findOrFail($id);
 
-        return view('events.edit', ['event' => $edit]);
+        return view('events.edit', ['event' => $event]);
+    }
+
+    public function update(Request $request)
+    {
+
+        $data = $request->all();
+
+        //image uploado
+        if ($request->hasfile('image') && $request->file('image')->isValid()) {
+
+            $requestImage = $request->image;
+
+            $extension = $requestImage->extension();
+            //fazendo uma hash no formato MD5 e tranformando o nome do arquivo de imagem unico
+            $imageName = md5($requestImage->getClientOriginalName() . Strtotime("now") . "." . $extension);
+
+            $requestImage->move(public_path('img/events'), $imageName);
+
+            $data['image'] = $imageName;
+        }
+
+        Event::findOrFail($request->id)->update($data);
+
+        return redirect('/dashboard')->with('msg', 'Evento editado com sucesso!');
     }
 }
-
