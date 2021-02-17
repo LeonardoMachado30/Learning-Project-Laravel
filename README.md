@@ -112,3 +112,9 @@ Aprendendo e aprimorando as habilidades com o framework Laravel, construindo o p
     2. Criando uma nova rota e uma **view** que mostra o **form** com os dados preenchidos.
     3. Usando outro verbo **HTTP** **'PUT'**.
     4. **Pesistir** a alteração por meio do action no **controller**.
+
+23. Relação many to many
+    1. Aprendendo relação de registro many to many
+    2. Fazer a logica para um usuario ter varios eventos, e um evento ter varios usuarios.
+    3. Criando nova tabela no banco de dados para criar a relação seguindo a convenção do laravel
+    
