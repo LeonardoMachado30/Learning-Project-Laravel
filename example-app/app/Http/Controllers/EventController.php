@@ -12,7 +12,6 @@ class EventController extends Controller
 {
     public function index()
     {
-
         //comando "Event::all()" pega todos os dados do banco
         $search = request('search');
 
@@ -22,7 +21,6 @@ class EventController extends Controller
                 ['title', 'like', '%' . $search . '%']
             ])->get();
         } else {
-
             $events = Event::all();
         }
 
@@ -54,9 +52,11 @@ class EventController extends Controller
             $requestImage = $request->image;
 
             $extension = $requestImage->extension();
+
             //fazendo uma hash no formato MD5 e tranformando o nome do arquivo de imagem unico
             $imageName = md5($requestImage->getClientOriginalName() . Strtotime("now") . "." . $extension);
 
+            //Movendo Imagem para a pasta de imagens
             $requestImage->move(public_path('img/events'), $imageName);
 
             $event->image = $imageName;
@@ -64,6 +64,7 @@ class EventController extends Controller
 
         //pegando o usuario logado
         $user = auth()->user();
+
         //atribundo o id do usuario para a chave estrangeira
         $event->user_id = $user->id;
 
@@ -85,7 +86,6 @@ class EventController extends Controller
         // Função toArray() converte os dados para array
         $eventOwner = User::where('id', $event->user_id)->first()->toArray();
 
-
         return view('events.show', ['event' => $event, 'eventOwner' => $eventOwner]);
     }
 
@@ -100,7 +100,6 @@ class EventController extends Controller
 
     public function destroy($id)
     {
-
         Event::findOrFail($id)->delete();
 
         return redirect('/dashboard')->with('msg', 'Evento excluido com sucesso!');
@@ -115,7 +114,6 @@ class EventController extends Controller
 
     public function update(Request $request)
     {
-
         $data = $request->all();
 
         //image uploado
@@ -135,5 +133,16 @@ class EventController extends Controller
         Event::findOrFail($request->id)->update($data);
 
         return redirect('/dashboard')->with('msg', 'Evento editado com sucesso!');
+    }
+
+    public function joinEvent($id) {
+
+        $user = auth()->user();
+
+        $user->eventsAsParticipant()->attach($id);
+
+        $event = Event::findOrFail($id);
+
+        return redirect('/dashboard')->with('msg', 'Sua presença esta confirmada no evento');
     }
 }

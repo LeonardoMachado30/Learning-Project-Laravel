@@ -42,6 +42,7 @@
                     <div class="card-body">
                         <p class="card-text"><ion-icon name="calendar-outline"></ion-icon> {{ \Carbon\Carbon::parse($event->date)->format('d/m/Y') }}  </p>
                         <h5 class="card-title">Título: {{ $event->title }}</h5>
+                        <p>Participantes: {{ count($event->users) }}</p>
                         <p class="card-text">Descrição: {{ $event->description }}</p>
                         <a href="/events/{{ $event->id }}" class="btn btn-primary" tabindex="-1" role="button">Saiba Mais</a>
                     </div>
