@@ -32,6 +32,11 @@ Route::get('/dashboard', [EventController::class, 'dashboard'])->middleware('aut
 
 
 Route::post('/events/join/{id}', [EventController::class, 'joinEvent'])->middleware('auth');
+
+Route::delete('/events/leave/{id}', [EventController::class, 'leaveEvent'])->middleware('auth');
+
+
+
 /*Outra forma de fazer
 
     Route::get('Rota', 'NameSpaceClasse@Metodo')->name('NomeDaRota');
