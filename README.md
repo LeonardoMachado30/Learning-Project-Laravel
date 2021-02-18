@@ -118,3 +118,4 @@ Aprendendo e aprimorando as habilidades com o framework Laravel, construindo o p
     2. Fazer a logica para um usuario ter varios eventos, e um evento ter varios usuarios.
     3. Criando nova tabela no banco de dados para criar a relação seguindo a convenção do laravel
     
+24. Personalizando informações, views, e incrementando removendo usuario do evento
